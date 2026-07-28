@@ -1,0 +1,20 @@
+/* PC、スマホ共通スタイル */
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 15px;
+}
+
+body {
+    max-width: 1080px;
+    margin: 0 auto 0 auto;
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+}
