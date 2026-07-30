@@ -202,3 +202,43 @@ h3 {
     position: relative;
     bottom: -42px;
 }
+
+/* ABOUT US */
+#aboutus {
+    margin: 80px auto;
+}
+
+/* 3つの組織文化と画像を入れる枠 */
+#aboutus > div {
+    display: flex;
+}
+
+/* 画像 */
+.culture-img {
+    width: 50%;
+    align-self: flex-start;
+}
+
+.culture-img2 {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* 3つの組織文化の表 */
+.culture-table {
+    margin: 0 50px 0 0;
+}
+
+/* 番号 */
+.culture-num {
+    font-size: 80px;
+    color: #2710d5;
+    padding: 0 20px 0 0;
+}
+
+/* 見出し */
+.culture-table th {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+}
