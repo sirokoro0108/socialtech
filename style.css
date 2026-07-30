@@ -126,18 +126,79 @@ h3 {
     padding: 10px 40px 0px 40px;
 }
 
+/* 外枠 */
 #product .product-flex {
     margin: 40px 0 0 0;
     display: flex;
 }
 
+/* 左のカラム */
 #product-left {
     width: 50%;
     margin-right: 20px;
 }
 
+/* 右のカラム */
 #product-right {
     width: 50%;
     margin-left: 20px;
     margin-top: 80px;
+}
+
+/* 画像+説明の枠 */
+#product-left > div {
+    position: relative;
+    height: 480px;
+    margin-right: 20px;
+}
+
+#product-right > div {
+    position: relative;
+    height: 480px;
+    margin-left: 20px;
+}
+
+/* 画像 */
+.product-photo {
+    width: 100%
+}
+
+/* 説明文の枠 */
+.product-explain {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    margin: 0 40px 0 40px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 説明文の英語 */
+.product-explain > span {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* 説明文の見出し */
+.product-explain > h3 {
+    margin: 5px 0 5px 0;
+}
+
+/* 説明文 */
+.product-explain > p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* 「もっと見る」ボタン */
+#product-more {
+    text-align: center;
+}
+
+#product-more a {
+    position: relative;
+    bottom: -42px;
 }
