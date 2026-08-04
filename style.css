@@ -24,12 +24,12 @@ header {
     font-size: 14px;
 }
 
-ul {
+#nav-pc ul {
     padding-left: 0;
     display: flex;
 }
 
-li {
+#nav-pc li {
     list-style: none;
 }
 
