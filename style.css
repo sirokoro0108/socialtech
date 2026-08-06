@@ -355,3 +355,121 @@ h3 {
     height: 368px;
     margin: 40px 0 0 0;
 }
+
+/* お問い合わせ */
+#contact {
+    margin: 80px auto;
+}
+
+/* 外枠 */
+#contact > form > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+/* 左列の見出し */
+.contact-heading {
+    width: 240px;
+    align-self: center;
+}
+
+/* 見出しのラベル */
+.contact-label {
+    font-weight: bold;
+}
+
+/* 必須 */
+.contact-span {
+    color: #ce2222;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* テキストボックス */
+.contact-textbox {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #707070;
+    background-color: #fafafa;
+    width: 400px;
+    height: 56px;
+}
+
+/* お問い合わせ内容のテキストエリア */
+.contact-textarea {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    background-color: #fafafa;
+    width: 400px;
+    height: 200px;
+}
+
+/* 各項目の見出し */
+#contact dt {
+    font-weight: bold;
+}
+
+/* 各項目の説明 */
+#contact dd {
+    margin: 0 0 16px 0;
+}
+
+/* 説明内の段落 */
+#contact dd p {
+    margin: 0;
+}
+
+/* 説明内のリスト */
+#contact dd ul {
+    padding-left: 0;
+}
+
+/* リストの項目 */
+#contact dd li {
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/* フッター */
+footer {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 80px 80px 30px 80px;
+}
+
+#footer-logo {
+    margin-bottom: 30px;
+}
+
+/* フッターのハイパーリンク */
+#footer-link > a {
+    text-decoration: none;
+    margin: 10px;
+    color: #ffffff;
+}
+
+#footer-link > a:hover {
+    text-decoration: underline;
+}
+
+/* SNSボタン */
+#sns-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sns-footer a {
+    margin: 30px;
+}
+
+/* コピーライト */
+#copyright {
+    color: #ffffff;
+    margin: 0;
+}
