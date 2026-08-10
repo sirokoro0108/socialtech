@@ -25,14 +25,15 @@ header {
 }
 
 #nav-pc ul {
-    padding-left: 0;
     display: flex;
+    padding-left: 0;
 }
 
 #nav-pc li {
     list-style: none;
 }
 
+/* ナビゲーションのリンクの装飾設定 */
 #nav-pc a {
     text-decoration: none;
     margin-left: 20px;
@@ -41,6 +42,11 @@ header {
 
 #nav-pc a:hover {
     text-decoration: underline;
+}
+
+/* スマホ用ナビを非表示 */
+#nav-sp, #menu-sp {
+    display:none;
 }
 
 /* メインビジュアル */
@@ -52,8 +58,8 @@ header {
 
 #main-massage {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-color: #2710d5;
     color: #ffffff;
     border-radius: 0 0 476px 0;
@@ -77,8 +83,8 @@ header {
     max-width: 620px;
     border-radius: 476px 0 0 0;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     z-index: 10;
 }
 
@@ -128,7 +134,7 @@ h3 {
 
 /* 外枠 */
 #product .product-flex {
-    margin: 40px 0 0 0;
+    margin-top: 40px;
     display: flex;
 }
 
@@ -205,7 +211,7 @@ h3 {
 
 /* ABOUT US */
 #aboutus {
-    margin: 80px auto;
+    margin: 80px auto 80px auto;
 }
 
 /* 3つの組織文化と画像を入れる枠 */
@@ -226,7 +232,7 @@ h3 {
 
 /* 3つの組織文化の表 */
 .culture-table {
-    margin: 0 50px 0 0;
+    margin-right: 50px;
 }
 
 /* 番号 */
@@ -238,8 +244,8 @@ h3 {
 
 /* 見出し */
 .culture-table th {
-    text-align: left;
     font-size: 28px;
+    text-align: left;
     font-weight: bold;
 }
 
@@ -472,4 +478,285 @@ footer {
 #copyright {
     color: #ffffff;
     margin: 0;
+}
+
+/*====================
+　スマートフォン用のスタイル
+====================*/
+@media screen and (max-width: 767px) {
+    /* PC用ナビゲーション非表示 */
+    #nav-pc {
+        display: none;
+    }
+    
+    #menu-sp {
+        display: block;
+        background-color: transparent;
+        float: right;
+        padding: 0;
+        border: none;
+    }
+
+    #nav-sp {
+        background-color: #2710d5;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: none;
+        z-index: 100;
+    }
+
+    #close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    #nav-sp nav ul {
+        padding: 0;
+    }
+
+    #nav-sp nav li {
+        list-style: none;
+    }
+
+    #logo-sp {
+        margin: 80px 0 30px 20px;
+    }
+
+    #nav-sp nav a {
+        display: block;
+        color: #ffffff;
+    }
+
+    #nav-sp nav a:hover {
+        text-decoration: underline;
+    }
+
+    #nav-sp .menu {
+        text-decoration: none;
+        margin: 0 20px 0 20px;
+        height: 44px;
+        font-size: 16px;
+        background-image: url("images/arrow.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    #sns {
+        position: absolute;
+        bottom: 20px;
+    }
+
+    #sns > a {
+        margin-right: 30px;
+    }
+    
+    /* メインビジュアル */
+    #main-visual {
+        position: relative;
+        height: 470px;
+    }
+
+    #main-visual > div {
+        text-align: center;
+        height: 280px;
+    }
+
+    #main-visual h1 {
+        font-size: 28px;
+        margin: 90px 0 0 0;
+    }
+
+    #main-visual > div > p {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    #main-visual > img {
+        width: 100%;
+        border-radius: 476px 0 0 0;
+        top: auto;
+        bottom: 0;
+    }
+
+    /* 見出し */
+    h2 {
+        margin: 15px 0 15px 0;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin: 10px 0 0 0;
+    }
+
+    /* ミッション */
+    #mission {
+        margin: 20px 0 20px 0;
+        padding: 0 20px 0 20px;
+    }
+
+    #mission-flex {
+        flex-direction: column;
+    }
+
+    #mission-flex > div {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* プロダクト */
+    #product {
+        margin: 0;
+        padding: 10px 20px 0 20px;
+    }
+    
+    /* 外枠 */
+    #product .product-flex {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    /* 左右のカラム　スマホでは縦並び */
+    #product-left,#product-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* ABOUT US */
+    #aboutus {
+        margin: 80px 20px;
+    }
+
+    #aboutus > div {
+        flex-direction: column;
+    }
+
+    .culture-table th {
+        font-size: 16px;
+    }
+
+    .culture-table {
+        margin-right: 0;
+        padding-right: 20px;
+        order: 2;
+    }
+
+    .culture-img {
+        width: 100%;
+        order: 1;
+    }
+
+    .culture-img2 {
+        margin-top: 0;
+    }
+
+    .culture-num {
+        padding: 0;
+    }
+
+    .culture-description {
+        margin: 0;
+    }
+
+    /* ビジョン */
+    #vision {
+        margin: 80px 20px 80px 20px;
+    }
+
+    .vision-box > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .vision-box > div > h4 {
+        margin: 60px 0 0 0;
+    }
+
+    /* 会社概要 */
+    #company {
+        margin: 0 20px 0 20px;
+    }
+
+    #company > h3 {
+        margin-bottom: 20px;
+    }
+
+    .tableheader {
+        width: 50px;
+    }
+    
+    .cell {
+        padding: 20px;
+    }
+
+    #company > iflame {
+        height: 240px;
+    }
+
+    /* コンタクト */
+    #contact {
+        margin: 80px 20px 80px 20px;
+    }
+
+    #contact > h3 {
+        margin: 0 0 20px 0;
+    }
+
+    #contact > form > div {
+        flex-direction: column;
+        margin: 0 0 20px 0;
+    }
+
+    .contact-heading {
+        align-self: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .contact-textbox {
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .contact-textarea {
+        height: 150px;
+        width: 100%;
+    }
+
+    .radiobutton {
+        margin-bottom: 20px;
+    }
+
+    /* フッダー */
+    footer {
+        padding: 30px 20px 50px 20px;
+        text-align: left;
+    }
+
+    #footer-link > a {
+        margin: 0 20px 30px 0;
+        display: block;
+        background-image: url("images/arrow.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    #footer-link > a:hover {
+        text-decoration: underline;
+    }
+
+    #sns-footer {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #copyright {
+        font-size: 12px;
+        margin: 30px 0 0 0;
+    }
 }
