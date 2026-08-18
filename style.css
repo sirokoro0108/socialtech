@@ -480,6 +480,104 @@ footer {
     margin: 0;
 }
 
+/* mission.html用のスタイル */
+.mission-main-inner {
+    background-image: url("images/mission/mission-main.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+#mission-title {
+    background-color: #2710d5;
+    width: 368px;
+    color: #ffffff;
+    height: 496px;
+    border-radius: 0 248px 248px 0;
+    position: relative;
+}
+
+#mission-title h1 {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    font-size: 80px;
+    line-height: 1;
+}
+
+#mission-title h1 span {
+    font-size: 26px;
+}
+
+#mission-title > p {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    font-size: 16px;
+}
+
+#mission-s2dgs {
+    padding: 20px;
+}
+
+.mission-h2 {
+    color: #2710d5;
+    font-size: 40px;
+}
+
+.mission-h2::after {
+    content: none;
+}
+
+#mission-five-goals {
+    padding: 20px;
+    display: flex;
+}
+
+#mission-five-goals .five-goals-image {
+    width: 30%;
+    padding: 20px;
+}
+
+#mission-five-goals .five-goals-image img {
+    width: 100%;
+}
+
+#mission-five-goals .five-goals-read {
+    width: 70%;
+    padding: 20px;
+}
+
+#mission-five-goals .five-goals-read > div {
+    margin-bottom: 40px;
+}
+
+.fivegoals-image-right {
+    float: right;
+    margin: 20px;
+}
+
+.fivegoals-image-left {
+    float: left;
+    margin: 20px;
+}
+
+.fivegoals-number {
+    color: #2710d5;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.fivegoals-h3 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.fivegoals-p {
+    margin: 0;
+}
+
+
 /*====================
 　スマートフォン用のスタイル
 ====================*/
@@ -758,5 +856,73 @@ footer {
     #copyright {
         font-size: 12px;
         margin: 30px 0 0 0;
+    }
+
+    #mission-main {
+        height: 256px;
+        margin: 4%;
+        position: relative;
+    }
+
+    .mission-main-inner {
+        height: 80%;
+        background-size: cover;
+    }
+
+    #mission-title {
+        width: 136px;
+        height: 256px;
+        position: absolute;
+        top: -10%;
+    }
+
+    #mission-title h1 {
+        left: 20px;
+        font-size: 40px;
+    }
+
+    #mission-title h1 span {
+        font-size: 18px;
+    }
+
+    #mission-title > p {
+        top: 180px;
+        left: 20px;
+        font-size: 13px;
+    }
+
+    .mission-h2 {
+        font-size: 38px;
+        margin: 0px;
+    }
+
+    .mission-h2::after {
+        content: none;
+    }
+
+    #mission-s2dgs > img {
+        width: 100%;
+    }
+
+    #mission-five-goals {
+        flex-direction: column;
+    }
+
+    #mission-five-goals > div {
+        padding: 0;
+    }
+
+    #mission-five-goals .five-goals-image, #mission-five-goals .five-goals-read {
+        width: 100%;
+        padding: 0;
+    }
+
+    #mission-five-goals .five-goals-read > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fivegoals-image-right, .fivegoals-image-left {
+        align-self: center;
     }
 }
